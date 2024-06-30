@@ -14,7 +14,6 @@ import Sales from "./pages/Sales/Sales";
 import NewsArticlePage from "./pages/NewsArticlePage/NewsArticlePage";
 import TrackingPage from "./pages/TrackingPage/TrackingPage";
 import { Suspense } from "react";
-import { useTranslation } from "react-i18next";
 
 
 const DefaultRouter = createBrowserRouter(

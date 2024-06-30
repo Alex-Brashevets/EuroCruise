@@ -48,7 +48,7 @@ interface AddLocationMarkerProps  {
 
 const LocationMarker = ({position}:AddLocationMarkerProps) => {
   const map = useMapEvents({
-    click(e) {
+    click() {
       map.flyTo(position.latlng, map.getZoom())
     },
   })

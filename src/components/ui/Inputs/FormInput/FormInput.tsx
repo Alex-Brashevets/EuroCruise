@@ -11,12 +11,12 @@ interface FormInputProps extends  React.HTMLProps<HTMLInputElement>{
   isError?: FieldError;
   helperText?: string;
   validate?: boolean;
-  register_field:"email" | "representative" | "phone" | "companyName" | "сountryFrom" | "сountryTo" | "cityFrom" | "cityTo"
+  register_field:"email" | "representative" | "phone" | "companyName" | "countryFrom" | "countryTo" | "cityFrom" | "cityTo";
   register: UseFormRegister<SettlementFormInputs>;
   error?: boolean
 }
 
-export const FormInput = ({label, icon, placeholder, isError, helperText, validate, register_field, register, error}:FormInputProps) => {
+export const FormInput = ({label, icon, placeholder, isError, helperText, validate, register_field, register}:FormInputProps) => {
   return (
       <div className={styles.container}>
         <label className={styles.label} htmlFor="">{label}<img src={icon} alt="icon"/></label>

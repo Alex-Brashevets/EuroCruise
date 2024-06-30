@@ -30,7 +30,6 @@ export interface SettlementFormInputs {
 const SettlementForm = () => {
   const [insuranceSelected, SetInsuranceSelected] = useState(true);
   const [recaptchaCheked, setRecaptchaChecked] = useState<null | string>(null)
-  const [recaptchReset, setRecaptchaReset] = useState<null | string>(null)
   const [state, handleSendFormSubmit] = useSendForm("xayrbezz");
   const [modalIsOpen, setModalIsOpen] = useState<boolean>(false);
   const modalContainer = useRef<HTMLDivElement>(null);
