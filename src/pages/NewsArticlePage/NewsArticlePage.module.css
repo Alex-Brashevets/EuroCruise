@@ -1,0 +1,24 @@
+.page {
+    padding: 50px 80px;
+    padding: 2% 14%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.content {
+    padding: 2% 0;
+    gap: 15px;
+    font-family: 40px;
+    overflow: hidden;
+}
+
+.articleText {
+    font-size: 20px;
+}
+
+.content img {
+    width: 500px;
+    height: 300px;
+    float: left;
+    margin-right:20px;
+    margin-bottom: 1px;
+}

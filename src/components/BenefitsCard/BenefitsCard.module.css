@@ -1,0 +1,30 @@
+.descriptionText{
+    display: flex;
+}
+.title{
+    font-size: 26px;
+    font-weight: 800;
+}
+.card_text{
+    font-size: 16px;
+}
+
+.descriptionText{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+.Benifit{
+    margin-top: 20px;
+    background-color: #F3F9FF;
+    padding: 30px;
+    justify-content: center;
+    border-radius: 12px;
+    align-items: center;
+}
+@media only screen and (min-width: 650px)  and (max-width: 1080px) {
+    .card_text{
+        font-size: 40px;
+    }
+}
+

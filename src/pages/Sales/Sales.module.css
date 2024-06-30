@@ -1,0 +1,92 @@
+.container{
+    text-align: center;
+    background-image:url("/src/assets/Rectangle2.svg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    height:480px; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 63px;
+    font-family: "Montserrat", sans-serif;
+}
+.text{
+color: aliceblue;
+font-size: 78.6px;
+}
+.text, .text2 {
+display: block;
+margin-bottom: 32px; /* Задайте нужный отступ между текстовыми блоками */
+}
+.text2{
+color: aliceblue;
+font-size: 21.33px;
+}
+.container2{
+display: flex;
+justify-content: space-between;
+padding-right: 12%;
+padding-left: 12%;
+}
+.img{
+height: 500px;
+width: 500px;
+}
+.vibe{
+display: flex;
+}
+.about{
+font-size:35.8px;
+margin-top: 17px;
+font-family: "Montserrat", sans-serif;
+}
+.paragraph{
+font-size: 24px;
+font-family: "Montserrat", sans-serif;
+}
+.tabl{
+margin-left:10%;
+width: 1250px;
+margin-right: 10%;
+height: 260px;
+}
+
+/*мобилка*/
+@media only screen and (max-width: 650px) {
+.img{
+    width: 80px;
+    height: 180px;
+}
+.text{
+    font-size: 40px;
+}
+.about{
+    font-size: 30px;
+}
+.paragraph{
+    font-size: 10px;
+}
+.line{
+    height: 40px;
+    width: 40px;
+}
+.text2{
+    font-size: 11px;
+}
+}
+
+/*планшет*/
+@media only screen and (min-width: 650px)  and (max-width: 1080px) {
+.paragraph{
+    font-size: 20px;
+}
+.about{
+    font-size: 40px;
+}
+.img{
+    width: 380px;
+    height: 480px;
+}
+}

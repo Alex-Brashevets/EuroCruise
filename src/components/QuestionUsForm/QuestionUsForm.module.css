@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.container h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: Inter, sans-serif;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.125rem;
+    width: 400px;
+}
+
+.button_container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.button {
+    border-radius: 4px;
+    color: #2D2E2E;
+    border: 1px solid #3A4F39;
+    padding: 17px 50px;
+    font-weight: 500;
+    font-size: 18px;
+}
+@media only screen and (max-width: 650px) {
+    .footer_container{
+        margin: 0 14%;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.125rem;
+        width: 220px;
+        align-items: center;
+    }
+}
+
+/*планшет*/
+@media only screen and (min-width: 650px)  and (max-width: 1080px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.125rem;
+        width: 320px;
+        align-items: center;
+    }
+}

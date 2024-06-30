@@ -1,0 +1,24 @@
+.benefits_container{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 10%;
+    padding-right: 10%;
+    gap:10px;
+    font-family: "Montserrat", sans-serif;
+    margin: 2% 0;
+}
+@media only screen and (max-width: 650px) {
+    .benefits_container{
+        flex-direction: column;
+    }
+}
+
+/*планшет*/
+@media only screen and (min-width: 650px)  and (max-width: 1080px) {
+    .benefits_container{
+        flex-direction: column;
+    }
+    .benefits_container img{
+        height:100px;
+    }
+}

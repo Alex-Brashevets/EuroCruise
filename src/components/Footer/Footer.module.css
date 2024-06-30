@@ -1,0 +1,53 @@
+.footer_container{
+    display: flex;
+    justify-content: space-around;
+    margin: 75px 11%;
+    font-family: "Montserrat", sans-serif;
+}
+.container_img{
+    display: flex;
+    flex-direction: column;
+}
+.vector_img{
+    margin-right: 10px;
+}
+.Company{
+    font-size: 32px;
+    font-weight: bold;
+}
+.info{
+    font-size: 20px;
+}
+.columText{
+    display: flex;
+    margin-top: 15px;
+}
+.info_container{
+    margin-top: 15px;
+    text-decoration: none;
+    list-style: none
+}
+@media only screen and (max-width: 650px) {
+    .footer_container{
+        margin: 0 14%;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .CompanyMain{
+        justify-content: center;
+        text-align: center;
+    }
+}
+/*планшет*/
+@media only screen and (min-width: 650px)  and (max-width: 1080px) {
+    .footer_container{
+        margin: 0 14%;
+        flex-direction: column;
+        gap: 40px
+    }
+    .CompanyMain{
+        justify-content: center;
+        text-align:center;
+    }
+}
+

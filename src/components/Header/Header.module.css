@@ -1,0 +1,264 @@
+.text:visited {
+  color: white !important;
+}
+
+.container {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  padding: 0 14%;
+  justify-content: space-between;
+  height: 93px;
+  align-items: center;
+  gap: 15px;
+  background-color: white;
+}
+.Drop{
+  position: relative;
+}
+.DropDown{
+  position: absolute;
+  left: 0;
+  transition: 0.3s;
+}
+.menulist {
+  text-decoration: none;
+  background-color: #0A3F72;
+  color: #FFFFFF;
+  padding: 7px;
+  list-style: none;
+  cursor: pointer;
+}
+.menulist li {
+ cursor: pointer;
+}
+.item {
+  display: flex;
+  align-items: center;
+}
+.vertical_line {
+  border-right: 2px solid #000000;
+  width: 38.8px;
+  height: 53px;
+}
+.button {
+  color: white;
+  background-color: #0a3f72;
+  border-radius: 6px;
+  width: 195px;
+  outline: none;
+  margin-right: 40px;
+  height: 37px;
+  cursor: pointer;
+}
+.place_img {
+  margin-left: 4%;
+  border: none;
+}
+.office {
+  margin-left: 9px;
+}
+
+.language {
+  margin-left: 3px;
+  cursor: pointer;
+}
+.strelkaimg {
+  margin-left: 1px;
+  margin-right: 38px;
+  cursor: pointer;
+}
+.LiMenu{
+  color: #FFFFFF;
+  text-decoration: none ;
+
+
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding-left: 20px;
+  list-style-type: none;
+  position: fixed;
+  width: 21%;
+  background-size: cover;
+  height: 100%;
+  padding-top: 60px;
+  color: #FFFFFF;
+  background-repeat:no-repeat;
+  right: 0; 
+  top: 0;
+  background-image: url(/src/assets/burgerMenuRight.svg);
+  text-decoration: none;
+  outline: none;
+  gap: 20px;
+  z-index: 10;
+  transition: left 7 ease;
+}
+.strelkaimg{
+  margin-right:10px ;
+}
+.menu ul {
+  display: flex;
+  flex-direction: column;
+}
+.active {
+  right: 0;
+}
+.li1 {
+  display: flex;
+  background-color: #0a3f72;
+  height: 66px;
+  text-decoration: none;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 14%;
+}
+.text {
+  list-style: none;
+  color: azure;
+  font-size: 14px;
+}
+.link {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+.link a {
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+.text a {
+  color: white;
+}
+
+.text a:hover,
+.text a:active,
+.text a:visited,
+.text a:focus {
+  color: white;
+}
+.Burger{
+  cursor: pointer;
+}
+/*мобилка*/
+@media only screen and (max-width: 650px) {
+  .place_img {
+    width: 10px;
+  }
+  .language {
+    font-size: 6px;
+  }
+  .strelkaimg {
+    width: 3px;
+    margin-left: 1px;
+
+  }
+  .office {
+    font-size: 4px;
+  }
+  .link {
+    font-family: "Montserrat", sans-serif;
+    font-size: 5px;
+    gap: 4px;
+  }
+  .item a {
+    font-size: 10px;
+  }
+  .vertical_line {
+    height: 30px;
+  }
+  .text {
+    padding: 0 2%;
+  }
+  .li1 {
+    padding: 0 3%;
+  }
+  .button {
+    width: 50px;
+    height: 23px;
+    font-size: 4px;
+
+  }
+  .logo {
+    width: 200px;
+    height: 50px;
+  }
+}
+@media only screen and (min-width: 550px) and (max-width: 650px) {
+  .place_img {
+    width: 10px;
+  }
+  .language {
+    font-size: 8px;
+  }
+  .strelkaimg {
+    width: 3px;
+    margin-left: 1px;
+  }
+  .office {
+    font-size: 8px;
+  }
+  .link {
+    font-family: "Montserrat", sans-serif;
+    font-size: 8px;
+    gap: 4px;
+  }
+  .item a {
+    font-size: 13px;
+  }
+  .vertical_line {
+    height: 30px;
+  }
+  .text {
+    padding: 0 2%;
+  }
+  .li1 {
+    padding: 0 3%;
+  }
+  .button {
+    width: 50px;
+    height: 23px;
+    font-size: 6px;
+  }
+  .logo {
+    width: 200px;
+    height: 50px;
+  }
+}
+
+/*планшет*/
+@media only screen and (min-width: 650px) and (max-width: 1080px) {
+  .place_img {
+    width: 20px;
+  }
+  .link {
+    font-size: 10px;
+    gap: 8px;
+    height: 23px;
+  }
+  .item a {
+    font-size: 10px;
+  }
+  .text {
+    padding: 0 2%;
+  }
+  .li1 {
+    padding: 0 3%;
+  }
+  .language {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  .strelkaimg {
+    margin-left: 2px;
+  }
+  .button {
+    width: 120px;
+    height: 27px;
+    font-size: 10px;
+  }
+  .logo {
+    width: 240px;
+  }
+}

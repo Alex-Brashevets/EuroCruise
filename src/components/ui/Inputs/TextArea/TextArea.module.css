@@ -1,0 +1,22 @@
+.textarea {
+    border: none;
+    padding: 16px 17px;
+    background-color: #F6F6F6;
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: Inter, sans-serif;
+    color: #2D2E2E;
+    height: 150px;
+    width: 100%;
+}
+
+.textarea::placeholder {
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: Inter, sans-serif;
+    color: #2D2E2E;
+}
+.textarea:active,
+.textarea:focus {
+    outline: none;
+}

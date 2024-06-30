@@ -1,0 +1,77 @@
+.container {
+    border: 1px solid #D6EAFF;
+     padding: 16px 19px;
+    background-color: white;
+     max-height: 80px;
+     width: 420px;
+     display: flex;
+     flex-direction: column;
+     align-items: start;
+     border-radius: 12px;
+ }
+ 
+ .label {
+     font-size: 1rem;
+     color: #667582;
+     display: flex;
+     align-items: center;
+     gap: 4px;
+ }
+ 
+ .input::placeholder {
+     font-size: 1.125rem;
+     color: #C7C7C7;
+     font-weight: 400;
+ }
+ 
+ .input {
+     font-size: 1.125rem;
+     border: none;
+     font-weight: 600;
+ }
+ .input:active,
+ .input:focus {
+     outline: none;
+ }
+
+ .helper_text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.015em;
+    text-align: left;
+    color: #ff7d7d;
+    margin-left: 6px;
+    margin-top: 24px;
+}
+
+@media only screen and (max-width: 650px) {
+    .input {
+        font-size: 1rem;
+    }
+    .label {
+        font-size: 0.85rem;
+    }
+    .input::placeholder {
+        font-size: 1rem;
+    }
+    .container {
+        padding: 10px 16px;
+    }
+}
+
+/*планшет*/
+@media only screen and (min-width: 650px)  and (max-width: 1080px) {
+    .input {
+        font-size: 1.1rem;
+    }
+    .label {
+        font-size: 0.95rem;
+    }
+    .input::placeholder {
+        font-size: 1.1rem;
+    }
+    .container {
+        padding: 13px 18px;
+    }
+}
