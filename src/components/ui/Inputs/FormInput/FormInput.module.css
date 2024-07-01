@@ -32,8 +32,11 @@
  .input:active,
  .input:focus {
      outline: none;
+    
  }
-
+ .container:focus-within{
+   border: 1px solid #495766; 
+ }
  .helper_text {
     font-size: 14px;
     font-weight: 400;

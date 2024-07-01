@@ -32,7 +32,7 @@ const DefaultRouter = createBrowserRouter(
 );
 function App() {
   return (
-    <><Suspense fallback="...is loading">
+    <><Suspense fallback="">
       <RouterProvider router={DefaultRouter} />
       </Suspense>
     </>

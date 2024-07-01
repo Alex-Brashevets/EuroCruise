@@ -49,6 +49,11 @@
   margin-right: 40px;
   height: 37px;
   cursor: pointer;
+  font-weight: 500;
+}
+
+.button:hover {
+  transform: scale(1.03);
 }
 .place_img {
   margin-left: 4%;

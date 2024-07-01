@@ -161,7 +161,7 @@ const SettlementForm = () => {
             </div>
           </div>
           <div className={styles.confirm}>
-            <GoogleReCaptchaCheckbox  callback={(token)=>setRecaptchaChecked(token)}
+            <GoogleReCaptchaCheckbox language={t("language")}  callback={(token)=>setRecaptchaChecked(token)}
             />
             <button type='submit' className={styles.button}>
               {t("formCalcCost")}
