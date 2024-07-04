@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+
 import logo from "/src/assets/logo.svg";
 import styles from "./Footer.module.css";
 import vector from "/src/assets/Vector.svg";

@@ -16,11 +16,11 @@
     color: aliceblue;
     font-size: 78.6px;
 }
-.text, .text2 {
+.text, .bannerDescription {
     display: block;
     margin-bottom: 32px; /* Задайте нужный отступ между текстовыми блоками */
   }
-.text2{
+.bannerDescription{
     color: aliceblue;
     font-size: 21.33px;
 }
@@ -34,10 +34,10 @@
     height: 500px;
     width: 500px;
 }
-.vibe{
+.containeraboutus{
     display: flex;
 }
-.about{
+.aboutus{
     font-size: 66.8px;
     font-family: "Montserrat", sans-serif;
 }
@@ -61,7 +61,7 @@
     .text{
         font-size: 40px;
     }
-    .about{
+    .aboutus{
         font-size: 30px;
     }
     .paragraph{
@@ -71,7 +71,7 @@
         height: 40px;
         width: 40px;
     }
-    .text2{
+    .bannerDescription{
         font-size: 11px;
     }
 }
@@ -81,7 +81,7 @@
     .paragraph{
         font-size: 20px;
     }
-    .about{
+    .aboutus{
         font-size: 40px;
     }
     .img{
