@@ -16,32 +16,32 @@
     color: aliceblue;
     font-size: 78.6px;
 }
-.text, .bannerDescription {
+.text, .banner_description {
     display: block;
     margin-bottom: 32px; /* Задайте нужный отступ между текстовыми блоками */
   }
-.bannerDescription{
+.banner_description{
     color: aliceblue;
     font-size: 21.33px;
 }
-.container2{
+.about_us_container{
     display: flex;
     justify-content: space-between;
     padding-right: 12%;
     padding-left: 12%;
 }
-.img{
+.img_car{
     height: 500px;
     width: 500px;
 }
-.containeraboutus{
+.container_about{
     display: flex;
 }
-.aboutus{
+.about_us{
     font-size: 66.8px;
     font-family: "Montserrat", sans-serif;
 }
-.paragraph{
+.description_paragraph{
     font-size: 24px;
     font-family: "Montserrat", sans-serif;
 }
@@ -54,36 +54,36 @@
 
  /*мобилка*/
  @media only screen and (max-width: 650px) {
-    .img{
+    .img_car{
         display: none;
     }
     .text{
         font-size: 40px;
     }
-    .aboutus{
+    .about_us{
         font-size: 30px;
     }
-    .paragraph{
+    .description_paragraph{
         font-size: 10px;
     }
-    .line{
+    .line_0f_three{
         height: 40px;
         width: 40px;
     }
-    .bannerDescription{
+    .banner_description{
         font-size: 11px;
     }
 }
 
 /*планшет*/
 @media only screen and (min-width: 650px)  and (max-width: 1080px) {
-    .paragraph{
+    .description_paragraph{
         font-size: 20px;
     }
-    .aboutus{
+    .about_us{
         font-size: 40px;
     }
-    .img{
+    .img_car{
         width: 380px;
         height: 480px;
     }

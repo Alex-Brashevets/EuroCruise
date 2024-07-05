@@ -1,31 +1,29 @@
-.vibe{
+.vibe {
     display: flex;
     margin-left: 14%;
     margin-right: 10%;
-}
-.news{
+  }
+  .news {
     font-size: 60px;
-    font-family: 'Moserat', sans-serif;
-}
-.threeImg{
+    font-family: 'Montserrat', sans-serif;
+  }
+  .threeImg {
     display: flex;
     justify-content: space-evenly;
     margin: 20px 0 50px;
-}
-.img{
-    height: 336px;
-    width: 307px;
-}
-/*мобилка*/
-@media only screen and (max-width: 650px) {
-    .line{
-        height: 40px;
-        width: 40px;
-        padding-top:10px
- 
+  }
+  .imgL, .imgR {
+    cursor: pointer;
+  }
+  /* мобилка */
+  @media only screen and (max-width: 650px) {
+    .line {
+      height: 40px;
+      width: 40px;
+      padding-top: 10px;
     }
-    .news{
-        font-size: 30px;
-        padding-top:10px
+    .news {
+      font-size: 30px;
+      padding-top: 10px;
     }
   }

@@ -10,21 +10,21 @@ export const Footer = () => {
     <footer>
       <div className={styles.footer_container}>
         <div className={styles.container_img}>
-          <img className={styles.logo2} src={logo} alt="" />
-          <div className={styles.columText}>
+          <img src={logo} alt="" />
+          <div className={styles.colum_text}>
             <img className={styles.vector_img} width="24" height="24" src={vector} />
-            <div className={styles.FooterText}>Республика Беларусь,<br /> г.Ковердяки, Брестская область 225032<br />ул. 40 Лет Победы 15 </div>
+            <div className={styles.footer_text}>Республика Беларусь,<br /> г.Ковердяки, Брестская область 225032<br />ул. 40 Лет Победы 15 </div>
           </div>
-          <div className={styles.columText}>
+          <div className={styles.colum_text}>
             <img className={styles.vector_img} src={Vector} />
-            <div className={styles.FooterText}>haddawy@comcast.net</div>
+            <div className={styles.footer_text}>haddawy@comcast.net</div>
           </div>
-          <div className={styles.columText}>
+          <div className={styles.colum_text}>
             <img className={styles.vector_img} src={telephone} />
-            <div className={styles.FooterText}>(334) 202-4792</div>
+            <div className={styles.footer_text}>(334) 202-4792</div>
           </div>
         </div>
-        <div className={styles.Question}>
+        <div className={styles.question}>
           <QuestionUsForm/>
         </div>
         <div className={styles.CompanyFooter}>
