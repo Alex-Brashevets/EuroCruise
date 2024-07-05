@@ -27,7 +27,7 @@ export const Footer = () => {
         <div className={styles.Question}>
           <QuestionUsForm/>
         </div>
-        <div className={styles.CompanyMain}>
+        <div className={styles.CompanyFooter}>
           <div className={styles.Company}>КОМПАНИЯ</div>
           <ul className={styles.info}>
             <li className={styles.info_container}>о нас</li>

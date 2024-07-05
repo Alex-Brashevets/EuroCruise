@@ -78,9 +78,9 @@ export const Header = () => {
           <div>
             <div  onClick={() => setNav(!nav)} className={styles.Burger}>
               {nav ? (
-                <img src={BurgerM} alt="Open Burger Menu" />
+                <img className={styles.img_of_menu} src={BurgerM} alt="Open Burger Menu" />
               ) : (
-                <img src={BurgerM} alt="Closed Burger Menu" />
+                <img className={styles.img_of_menu} src={BurgerM} alt="Closed Burger Menu" />
               )}
             </div>
             {nav && (

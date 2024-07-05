@@ -16,3 +16,16 @@
     height: 336px;
     width: 307px;
 }
+/*мобилка*/
+@media only screen and (max-width: 650px) {
+    .line{
+        height: 40px;
+        width: 40px;
+        padding-top:10px
+ 
+    }
+    .news{
+        font-size: 30px;
+        padding-top:10px
+    }
+  }

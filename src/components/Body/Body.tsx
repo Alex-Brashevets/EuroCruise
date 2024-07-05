@@ -10,16 +10,16 @@ export const Body = () => {
         <div className={styles.container}>
           <div className="">
             <h1 className={styles.text}>{t("bannerTitle")}</h1>
-            <div className={styles.text2}>
+            <div className={styles.bannerDescription}>
               {t("bannerDescriptionP1")}<br/>{" "}
               {t("bannerDescriptionP2")}
             </div>
         </div>
       </div>
       <div className={styles.container2}>
-        <div id="About" className={styles.abotus}>
-          <div className={styles.vibe}>
-            <h2 className={styles.about}>{t("aboutUsLower")}</h2>
+        <div id="About" className={styles.aboutUs}>
+          <div className={styles.containeraboutus}>
+            <h2 className={styles.aboutus}>{t("aboutUsLower")}</h2>
             <img className={styles.line} src={ThreeLine}/>
           </div>
           <p className={styles.paragraph}>

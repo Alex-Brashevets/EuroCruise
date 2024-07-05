@@ -55,8 +55,7 @@
  /*мобилка*/
  @media only screen and (max-width: 650px) {
     .img{
-        width: 80px;
-        height: 180px;
+        display: none;
     }
     .text{
         font-size: 40px;
