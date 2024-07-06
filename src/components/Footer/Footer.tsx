@@ -5,7 +5,21 @@ import vector from "/src/assets/Vector.svg";
 import Vector from '/src/assets/VectorM.svg'
 import telephone from '/src/assets/TeleP.svg'
 import {QuestionUsForm} from "../QuestionUsForm/QuestionUsForm";
+import { Anchor } from "../../utils/hooks/useAnchor";
+import { useTranslation } from "react-i18next";
+import { MapContainer, TileLayer , Marker} from "react-leaflet";
+import { icon } from "leaflet";
+import { useMediaQuery } from "../../utils/hooks/useMediaQuery";
+import { NavLink } from "react-router-dom";
+
+const ICON = icon({
+  iconUrl: "/marker.png",
+  iconSize: [32, 32],
+})
+
 export const Footer = () => {
+  const { t, i18n } = useTranslation();
+  const matches = useMediaQuery('(max-width: 650px)');
   return (
     <footer>
       <div className={styles.footer_container}>
@@ -23,6 +37,13 @@ export const Footer = () => {
             <img className={styles.vector_img} src={telephone} />
             <div className={styles.footer_text}>(334) 202-4792</div>
           </div>
+          <MapContainer id="Office" center={[52.175965, 23.667446]} zoom={16} scrollWheelZoom={false} style={matches ? {height: '240px', width: '250px', borderRadius: '10px', marginTop: '25px'} : {height: '240px', width:  '410px', borderRadius: '10px', marginTop: '25px'}}>
+            <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <Marker icon={ICON} position={[52.175965, 23.667446]}/>
+        </MapContainer>
         </div>
         <div className={styles.question}>
           <QuestionUsForm/>
@@ -30,10 +51,13 @@ export const Footer = () => {
         <div className={styles.CompanyFooter}>
           <div className={styles.Company}>КОМПАНИЯ</div>
           <ul className={styles.info}>
-            <li className={styles.info_container}>о нас</li>
-            <li className={styles.info_container}>карьера</li>
-            <li className={styles.info_container}>Вакансии</li>
-            <li className={styles.info_container}>доставка грузов</li>
+            <li className={styles.info_container}><Anchor to="About" path="/">
+            {t("aboutUs")} </Anchor></li>
+            <li className={styles.info_container}><NavLink to="/vacancies" >
+            {t("vacancies")} </NavLink></li>
+            <li className={styles.info_container}><NavLink to="/delivery">
+            {t("delivery")} </NavLink></li>
+            
           </ul>
         </div>
       </div>

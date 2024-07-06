@@ -32,9 +32,8 @@ export const Header = () => {
           </NavLink>
           <div className={styles.vertical_line} />
           <img className={styles.place_img} src={placeholder} alt="xz" />
-          <a href="ссылка" className={styles.link}>
-            <div className={styles.office}>{t("text")}</div>
-          </a>
+            <div className={styles.office}><Anchor to="Office" path="/">
+            {t("text")} </Anchor></div>
         </div>
         <div className={styles.item}>
           <div className={styles.header_button}>

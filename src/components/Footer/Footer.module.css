@@ -25,7 +25,11 @@
 .info_container{
     margin-top: 15px;
     text-decoration: none;
-    list-style: none
+    list-style: none;
+}
+.info_container a {
+    color: #000;
+    text-decoration: none;
 }
 @media only screen and (max-width: 650px) {
     .footer_container{

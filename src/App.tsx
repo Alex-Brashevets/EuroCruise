@@ -14,6 +14,8 @@ import Sales from "./pages/Sales/Sales";
 import NewsArticlePage from "./pages/NewsArticlePage/NewsArticlePage";
 import TrackingPage from "./pages/TrackingPage/TrackingPage";
 import { Suspense } from "react";
+import ServiceCentr from "./pages/ServiceCentr/ServiceCentr";
+
 
 
 const DefaultRouter = createBrowserRouter(
@@ -27,6 +29,7 @@ const DefaultRouter = createBrowserRouter(
       <Route path="/sales" element={<Sales />} />
       <Route path="/news/:id" element={<NewsArticlePage />} />
       <Route path="/tracking" element={<TrackingPage />} />
+      <Route path="/service-center" element={<ServiceCentr/>} />
     </Route>
   )
 );

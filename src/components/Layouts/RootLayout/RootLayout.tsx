@@ -1,15 +1,22 @@
 
-import { Outlet, ScrollRestoration } from 'react-router-dom';
+import { Outlet, ScrollRestoration, useLocation } from 'react-router-dom';
 import {Header} from "../../Header/Header";
 import {Footer} from "../../Footer/Footer";
 
-const RootLayout = () => (
-    <>
-        <Header/>
-        <Outlet/>
-        <ScrollRestoration />
-        <Footer />
-    </>
-);
+const RootLayout = () =>  {
+    const {pathname} = useLocation();
+    return (
+        <>
+            <Header/>
+            <main style={pathname !== '/' ? {padding: '40px 0'} : {}}>
+            <Outlet/>
+            <ScrollRestoration />
+            </main>
+            
+            <Footer />
+        </>
+    )
+}
+   ;
 
 export default RootLayout;

@@ -5,3 +5,6 @@
   margin: 0;
   box-sizing: border-box;
 }
+.leaflet-touch .leaflet-control-attribution {
+  display: none;
+}
