@@ -1,7 +1,6 @@
 import { MapContainer, TileLayer , Marker} from "react-leaflet";
 import { icon } from "leaflet";
 import { useMediaQuery } from "../../utils/hooks/useMediaQuery";
- const matches = useMediaQuery('(max-width: 650px)');
 const ICON = icon({
     iconUrl: "/marker.png",
     iconSize: [32, 32],
