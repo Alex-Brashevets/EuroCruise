@@ -16,8 +16,7 @@ const ICON = icon({
   iconUrl: "/marker.png",
   iconSize: [32, 32],
 })
-
-export const Footer = () => {
+const Footer = () => {
   const { t, i18n } = useTranslation();
   const matches = useMediaQuery('(max-width: 650px)');
   return (
@@ -64,3 +63,6 @@ export const Footer = () => {
     </footer>
   );
 };
+
+
+export default Footer;
