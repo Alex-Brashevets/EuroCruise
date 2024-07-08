@@ -7,7 +7,6 @@ import telephone from '/src/assets/TeleP.svg'
 import {QuestionUsForm} from "../QuestionUsForm/QuestionUsForm";
 import { Anchor } from "../../utils/hooks/useAnchor";
 import { useTranslation } from "react-i18next";
-import { useMediaQuery } from "../../utils/hooks/useMediaQuery";
 import { NavLink } from "react-router-dom";
 import { Suspense } from "react";
 import FooterMap from "../FooterMap/FooterMap";
@@ -15,7 +14,7 @@ import FooterMap from "../FooterMap/FooterMap";
 
 const Footer = () => {
   const { t, i18n } = useTranslation();
-  const matches = useMediaQuery('(max-width: 650px)');
+ 
   return (
     <footer>
       <div className={styles.footer_container}>
