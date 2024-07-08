@@ -12,7 +12,7 @@ import { Suspense } from "react";
 import FooterMap from "../FooterMap/FooterMap";
 
 
-const Footer = () => {
+export const Footer = () => {
   const { t, i18n } = useTranslation();
  
   return (
@@ -55,6 +55,3 @@ const Footer = () => {
     </footer>
   );
 };
-
-
-export default Footer;

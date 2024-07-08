@@ -1,6 +1,8 @@
+
 import { Outlet, ScrollRestoration, useLocation } from 'react-router-dom';
 import {Header} from "../../Header/Header";
-import Footer from '../../Footer/Footer';
+import {Footer} from "../../Footer/Footer";
+
 const RootLayout = () =>  {
     const {pathname} = useLocation();
     return (
@@ -10,8 +12,8 @@ const RootLayout = () =>  {
             <Outlet/>
             <ScrollRestoration />
             </main>
-            <Footer />
             
+            <Footer />
         </>
     )
 }
