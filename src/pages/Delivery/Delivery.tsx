@@ -2,7 +2,6 @@ import {useNavigate} from "react-router-dom"
 import MainCar from "/src/assets/car1.svg";
 import ThreeLine from "/src/assets/line.svg";
 import styles from './Delivery.module.css'
-import {Footer} from "../../components/Footer/Footer";
 const Delivery = (): JSX.Element => {
   const navigate = useNavigate();
   return (

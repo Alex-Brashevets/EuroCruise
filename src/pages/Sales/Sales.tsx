@@ -1,10 +1,7 @@
-import {useNavigate} from "react-router-dom"
 import MainCar from "/src/assets/car1.svg";
 import ThreeLine from "/src/assets/line.svg";
 import styles from './Sales.module.css'
-import {Footer} from "../../components/Footer/Footer";
 const Sales = (): JSX.Element => {
-  const navigate = useNavigate();
   return (
     <><div className={styles.container2}>
           <div className={styles.abotus}>
